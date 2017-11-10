@@ -7,7 +7,6 @@
  */
 return [
 
-    'id'                    => 'app-skeeks-console',
     'controllerNamespace'   => 'console\controllers',
 
     'bootstrap' => ['log', 'cms'],
@@ -26,9 +25,5 @@ return [
                 ],
             ],
         ],
-        'urlManager' => [
-            'baseUrl'   => '',
-            //'hostInfo' => 'https://demo.ru'
-        ]
     ],
 ];

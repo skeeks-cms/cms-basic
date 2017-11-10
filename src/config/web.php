@@ -10,10 +10,6 @@ return [
 
     'components' =>
     [
-        'errorHandler' => [
-            'errorAction' => 'cms/error/error',
-        ],
-
         'view' => [
             'theme' =>
             [
