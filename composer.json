@@ -1,0 +1,98 @@
+{
+	"name": "skeeks/cms-basic",
+	"description": "SkeekS CMS basic package",
+	"keywords": ["yii", "skeeks", "framework", "component"],
+  	"homepage": "https://cms.skeeks.com/",
+	"type": "yii2-extension",
+	"license": "GPL-3.0+",
+	"support": {
+        "issues": "https://skeeks.com/",
+        "wiki": "https://cms.skeeks.com/docs",
+        "source": "https://github.com/skeeks-cms/cms-basic.git"
+    },
+	"authors": [
+		{
+			"name": "Semenov Alexander",
+			"email": "semenov@skeeks.com"
+		}
+	],
+	"require": {
+		"skeeks/cms": "~4.0.4",
+		"skeeks/cms-module-form2": "^2.0",
+		"skeeks/cms-agent": "^1.1",
+		"skeeks/cms-mailer": "^2.0",
+        "skeeks/cms-seo": "^2.0",
+        "skeeks/cms-search": "^2.0",
+		"skeeks/cms-db-dumper": "^1.0",
+		"skeeks/cms-log-db-target": "^1.0",
+		"skeeks/cms-assets-auto-compress": "^1.4"
+	},
+    "autoload": {
+        "psr-4": {
+            "skeeks\\cms\\cmsbasic\\": "src/"
+        }
+    },
+	"scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject",
+            "yii\\composer\\Installer::postInstall"
+        ],
+        "post-install-cmd": [
+            "yii\\composer\\Installer::postInstall",
+            "skeeks\\cms\\composer\\Installer::postInstall"
+        ],
+        "post-update-cmd": [
+            "skeeks\\cms\\composer\\Installer::postUpdate",
+            "skeeks\\cms\\composer\\Installer::clearDirs",
+            "php yii cms/migrate --interactive=0",
+            "skeeks\\cms\\composer\\Installer::clearDirs",
+            "php yii rbac/init",
+            "php yii cmsAgent/init"
+        ]
+    },
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "console/runtime": "0777",
+                    "common/runtime": "0777",
+                    "frontend/runtime": "0777",
+                    "frontend/web/assets": "0777",
+                    "yii": "0755"
+                }
+            ]
+        },
+        "yii\\composer\\Installer::postInstall": {
+            "generateCookieValidationKey": [
+                "frontend/config/main.php"
+            ]
+        },
+        "skeeks\\cms\\composer\\Installer::clearDirs": {
+            "dirs": [
+                "console/runtime/cache",
+                "frontend/runtime/cache",
+                "frontend/web/assets"
+            ]
+        },
+		"config-plugin": {
+            "web": [
+				"src/config/common.php",
+				"src/config/web.php"
+			],
+            "console": [
+				"src/config/common.php",
+				"src/config/console.php"
+			]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "process-timeout": 1800,
+        "discard-changes": true
+    }
+}
