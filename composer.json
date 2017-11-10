@@ -19,7 +19,7 @@
 	"require": {
 		"skeeks/cms": "~5.0.0 || dev-master",
 		"skeeks/cms-module-form2": "~2.5.0 || dev-master",
-		"skeeks/cms-agent": "~1.2.0 || dev-master",
+		"skeeks/cms-agent": "~1.3.0 || dev-master",
 		"skeeks/cms-mailer": "~2.1.0 || dev-master",
         "skeeks/cms-seo": "~2.1.0 || dev-master",
         "skeeks/cms-search": "~2.1.0 || dev-master",
