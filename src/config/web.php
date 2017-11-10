@@ -6,8 +6,6 @@
  * @date 10.11.2017
  */
 return [
-    'basePath' => '@root/frontend',
-
     'controllerNamespace' => 'frontend\controllers',
 
     'components' =>
