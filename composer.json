@@ -33,6 +33,29 @@
         }
     },
     "extra": {
+		"yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "console/runtime": "0777",
+                    "common/runtime": "0777",
+                    "frontend/runtime": "0777",
+                    "frontend/web/assets": "0777",
+                    "yii": "0755"
+                }
+            ]
+        },
+        "yii\\composer\\Installer::postInstall": {
+            "generateCookieValidationKey": [
+                "frontend/config/main.php"
+            ]
+        },
+        "skeeks\\cms\\composer\\Installer::clearDirs": {
+            "dirs": [
+                "console/runtime/cache",
+                "frontend/runtime/cache",
+                "frontend/web/assets"
+            ]
+        },
 		"config-plugin": {
             "web": [
 				"src/config/common.php",
