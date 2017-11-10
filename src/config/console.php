@@ -7,6 +7,8 @@
  */
 return [
 
+    'basePath' => '@root/console',
+
     'controllerNamespace'   => 'console\controllers',
 
     'bootstrap' => ['log', 'cms'],
