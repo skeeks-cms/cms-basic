@@ -6,5 +6,25 @@
  * @date 10.11.2017
  */
 return [
+    'controllerNamespace' => 'frontend\controllers',
 
+    'components' =>
+    [
+        'errorHandler' => [
+            'errorAction' => 'cms/error/error',
+        ],
+
+        'view' => [
+            'theme' =>
+            [
+                'pathMap'       =>
+                [
+                    '@app/views' =>
+                    [
+                        '@app/templates/default',
+                    ],
+                ]
+            ],
+        ],
+    ],
 ];

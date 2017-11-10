@@ -7,4 +7,28 @@
  */
 return [
 
+    'id'                    => 'app-skeeks-console',
+    'controllerNamespace'   => 'console\controllers',
+
+    'bootstrap' => ['log', 'cms'],
+
+    'aliases'       => [
+        '@webroot'      => '@frontend/web',
+        '@web'          => '',
+    ],
+
+    'components' => [
+        'log' => [
+            'targets' => [
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning'],
+                ],
+            ],
+        ],
+        'urlManager' => [
+            'baseUrl'   => '',
+            //'hostInfo' => 'https://demo.ru'
+        ]
+    ],
 ];
