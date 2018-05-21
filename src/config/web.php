@@ -11,18 +11,14 @@ return [
 
     'controllerNamespace' => 'frontend\controllers',
 
-    'components' =>
-    [
+    'components' => [
         'view' => [
-            'theme' =>
-            [
-                'pathMap'       =>
-                [
-                    '@app/views' =>
-                    [
+            'theme' => [
+                'pathMap' => [
+                    '@app/views' => [
                         '@app/templates/default',
                     ],
-                ]
+                ],
             ],
         ],
     ],

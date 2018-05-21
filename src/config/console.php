@@ -8,20 +8,20 @@
 return [
     'basePath' => "@root/console",
 
-    'controllerNamespace'   => 'console\controllers',
+    'controllerNamespace' => 'console\controllers',
 
     'bootstrap' => ['log', 'cms'],
 
-    'aliases'       => [
-        '@webroot'      => '@frontend/web',
-        '@web'          => '',
+    'aliases' => [
+        '@webroot' => '@frontend/web',
+        '@web'     => '',
     ],
 
     'components' => [
         'log' => [
             'targets' => [
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class'  => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
                 ],
             ],
