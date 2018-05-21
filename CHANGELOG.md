@@ -1,9 +1,9 @@
 Changelog
 =========
 
-1.1.0.pre
+1.1.0
 -----------------
-  * Update dependencies
+  * Update dependencies skeeks/cms 5.1.0
   
 1.0.0
 -----------------
