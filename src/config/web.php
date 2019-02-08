@@ -14,11 +14,7 @@ return [
     'components' => [
         'view' => [
             'theme' => [
-                'pathMap' => [
-                    '@app/views' => [
-                        '@app/templates/default',
-                    ],
-                ],
+                'class' => \skeeks\cms\cmsbasic\DefaultTheme::class,
             ],
         ],
     ],
