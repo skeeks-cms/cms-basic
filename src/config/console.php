@@ -16,15 +16,4 @@ return [
         '@webroot' => '@frontend/web',
         '@web'     => '',
     ],
-
-    'components' => [
-        'log' => [
-            'targets' => [
-                [
-                    'class'  => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
-                ],
-            ],
-        ],
-    ],
 ];
