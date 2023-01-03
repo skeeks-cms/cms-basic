@@ -12,5 +12,25 @@ return [
         '@frontend' => '@root/frontend',
         '@console'  => '@root/console',
     ],
+    
+    'components' => [
+        'urlManager' => [
+            'rules' => [
+                'search' => 'cmsSearch/result',
+                'content-element' => [
+                    'class' => \skeeks\cms\components\urlRules\UrlRuleContentElement::class,
+                ],
+                'tree' => [
+                    'class' => \skeeks\cms\components\urlRules\UrlRuleTree::class,
+                ]
+            ]
+        ],
+        'assetManager' => [
+            'linkAssets' => true,
+        ],
+        'cmsAgent'     => [
+            'onHitsEnabled' => true,
+        ],
+    ]
 
 ];
