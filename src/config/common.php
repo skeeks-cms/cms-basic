@@ -29,7 +29,7 @@ return [
             'linkAssets' => true,
         ],
         'cmsAgent'     => [
-            'onHitsEnabled' => true,
+            'onHitsEnabled' => false,
         ],
     ]
 
