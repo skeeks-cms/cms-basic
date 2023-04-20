@@ -13,7 +13,7 @@ use yii\base\Theme;
 /**
  * @author Semenov Alexander <semenov@skeeks.com>
  */
-class DefaultTheme extends Theme
+class DefaultTheme extends \skeeks\cms\base\Theme
 {
     public $pathMap = [
         '@app/views' => [
