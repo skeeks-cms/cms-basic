@@ -7,6 +7,13 @@
  */
 return [
 
+    "name" => "SkeekS CMS",
+    'id' => 'skeeks-cms-app',
+    
+    'language' => 'ru',
+    
+    'timeZone' => 'UTC',
+    
     'aliases'     => [
         '@common'   => '@root/common',
         '@frontend' => '@root/frontend',
@@ -14,6 +21,12 @@ return [
     ],
     
     'components' => [
+        
+        'formatter' => [
+            'defaultTimeZone' => 'UTC',
+            'timeZone'        => 'Europe/Moscow',
+        ],
+        
         'urlManager' => [
             'rules' => [
                 '~search' => 'cmsSearch/result/index',
