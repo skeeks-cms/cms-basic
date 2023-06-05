@@ -18,11 +18,11 @@
 	],
 	"require": {
 		"skeeks/cms": "^5.1.0 || dev-master",
-        "skeeks/cms-seo": "^2.1.6 || dev-master",
+        "skeeks/cms-seo": "^3.0 || dev-master",
         "skeeks/cms-rp-view-widget": "^2.0 || dev-master",
 		"skeeks/cms-module-form2": "^3.0 || dev-master",
 		"skeeks/cms-mailer": "^3.0 || dev-master",
-        "skeeks/cms-search": "^2.1.0 || dev-master",
+        "skeeks/cms-search": "^3.0 || dev-master",
 		"skeeks/cms-db-dumper": "^2.0 || dev-master",
 		"skeeks/cms-log-db-target": "^2.0 || dev-master",
 		"skeeks/cms-assets-auto-compress": "^1.6.0 || dev-master",
