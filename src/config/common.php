@@ -25,6 +25,11 @@ return [
         'formatter' => [
             'defaultTimeZone' => 'UTC',
             'timeZone'        => 'Europe/Moscow',
+            
+            'numberFormatterOptions' => [
+                NumberFormatter::MIN_FRACTION_DIGITS => 0,
+                NumberFormatter::MAX_FRACTION_DIGITS => 2,
+            ],
         ],
         
         'urlManager' => [
@@ -53,6 +58,14 @@ return [
         ],
         'cmsAgent'     => [
             'onHitsEnabled' => false,
+        ],
+        'i18n' => [
+            'translations' => [
+                'app' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@skeeks/cms/cmsbasic/messages',
+                ],
+            ],
         ],
     ]
 
