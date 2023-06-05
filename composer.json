@@ -20,7 +20,7 @@
 		"skeeks/cms": "^5.1.0 || dev-master",
         "skeeks/cms-seo": "^2.1.6 || dev-master",
         "skeeks/cms-rp-view-widget": "^2.0 || dev-master",
-		"skeeks/cms-module-form2": "^2.5.0 || dev-master",
+		"skeeks/cms-module-form2": "^3.0 || dev-master",
 		"skeeks/cms-mailer": "^3.0 || dev-master",
         "skeeks/cms-search": "^2.1.0 || dev-master",
 		"skeeks/cms-db-dumper": "^2.0 || dev-master",
