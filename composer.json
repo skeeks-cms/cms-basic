@@ -27,7 +27,7 @@
 		"skeeks/cms-log-db-target": "^2.0 || dev-master",
 		"skeeks/cms-assets-auto-compress": "^1.6.0 || dev-master",
 		"skeeks/cms-related-handler-extra": "^1.1.0 || dev-master",
-		"skeeks/cms-mysql-session": "^1.0 || dev-master"
+		"skeeks/cms-mysql-session": "^2.0 || dev-master"
 	},
     "autoload": {
         "psr-4": {
