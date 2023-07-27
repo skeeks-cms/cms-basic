@@ -34,6 +34,25 @@ return [
         
         'urlManager' => [
             'rules' => [
+                
+                'u' => 'cms/user/index',
+                'u/<username>' => 'cms/user/view',
+                'u/<username>/<action>' => 'cms/user/<action>',
+
+                '~<_a:(login|logout|register|forget|reset-password|approve-email)>' => 'cms/auth/<_a>',
+
+                'skeeks-cms' => 'cms/cms/index',
+                'skeeks-cms/<action>' => 'cms/cms/<action>',
+
+                'favicon.<extension:\w+>' => '/cms/favicon/on-request',
+
+                "image-preview" => ["class" => 'skeeks\cms\components\urlRules\UrlRuleImagePreview'],
+                "storage-file" => ["class" => 'skeeks\cms\components\urlRules\UrlRuleStorageFile'],
+
+                [
+                    'class' => \skeeks\cms\components\urlRules\UrlRuleSavedFilter::class
+                ],
+                
                 '~search' => 'cmsSearch/result/index',
                 'content-element' => [
                     'class' => \skeeks\cms\components\urlRules\UrlRuleContentElement::class,
