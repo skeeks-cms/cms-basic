@@ -52,6 +52,9 @@ return [
                 ['class' => \skeeks\cms\components\urlRules\UrlRuleSavedFilter::class],
                 
                 '~search' => 'cmsSearch/result/index',
+                'seo' => [
+                    'class' => \skeeks\cms\components\urlRules\UrlRuleSeo::class,
+                ],
                 'content-element' => [
                     'class' => \skeeks\cms\components\urlRules\UrlRuleContentElement::class,
                 ],
