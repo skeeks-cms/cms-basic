@@ -18,6 +18,8 @@
 	],
 	"require": {
 		"skeeks/cms": "^6.0 || dev-master",
+		"skeeks/cms-oauth2-server": "^1.0",
+		"skeeks/cms-mcp": "^1.0",
 
         "skeeks/cms-seo": "^3.0 || dev-master",
         "skeeks/cms-rp-view-widget": "^2.0 || dev-master",
